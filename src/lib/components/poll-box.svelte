@@ -5,6 +5,7 @@
 	import { page } from '$app/stores';
 	import { scale } from 'svelte/transition';
 	import Avatar from './avatar.svelte';
+	import { formatDate } from '..';
 
 	type $$Props = {
 		poll: Poll<Option[]>;
@@ -42,9 +43,13 @@
 <div class="mb-4 flex w-full flex-col gap-4 rounded border border-gray-200 p-2 *:select-none">
 	{#if poll.expand}
 		{@const { avatar, name, id } = poll.expand.author}
-		<div class="flex items-center gap-2">
-			<Avatar {avatar} {name} />
-			<p>{$page.data.user?.id == id ? 'You' : name}</p>
+		<div class="w-full flex items-center justify-between">
+    		<div class="flex items-center gap-2">
+    			<Avatar {avatar} {name} />
+    			<p>{$page.data.user?.id == id ? 'You' : name}</p>
+    		</div>
+      
+            <small>{formatDate(poll.created)}</small>
 		</div>
 	{/if}
 

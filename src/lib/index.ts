@@ -10,3 +10,8 @@ export const resolve_promise = async <T>(callback: () => Promise<T>) : Promise<[
     }
 }
 
+export const formatDate = (date: Date) => date.toLocaleDateString("en-US", {
+  month: "short",
+  day: "2-digit",
+  year: "numeric",
+});
