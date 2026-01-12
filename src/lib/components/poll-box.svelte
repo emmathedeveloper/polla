@@ -49,7 +49,7 @@
     			<p>{$page.data.user?.id == id ? 'You' : name}</p>
     		</div>
       
-            <small>{formatDate(poll.created)}</small>
+            <!-- <small>{formatDate(poll.created)}</small> -->
 		</div>
 	{/if}
 
