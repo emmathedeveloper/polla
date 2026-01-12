@@ -21,20 +21,20 @@
 <svelte:head>
     <title>Polla | Sign In</title>
 
-	<meta name="og:url" content="https://polla-app.netlify.app" />
+	<meta name="og:url" content="https://polla-app.vercel.app" />
 	<meta name="og:title" content="Polla" />
 	<meta name="og:description" content="Get on this poll" />
 	<meta name="og:type" content="website" />
-	<meta name="og:image" content="https://polla-app.netlify.app/images/twitter_opengraph_light.png" />
+	<meta name="og:image" content="https://polla-app.vercel.app/images/twitter_opengraph_light.png" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta property="twitter:domain" content="polla-app.netlify.app" />
-	<meta property="twitter:url" content="https://polla-app.netlify.app" />
+	<meta property="twitter:url" content="https://polla-app.vercel.app" />
 	<meta name="twitter:title" content="Polla" />
 	<meta name="twitter:description" content="Get on this poll" />
 	<meta
 		name="twitter:image"
-		content="https://polla-app.netlify.app/images/twitter_opengraph_light.png"
+		content="https://polla-app.vercel.app/images/twitter_opengraph_light.png"
 	/>
 </svelte:head>
 
@@ -42,10 +42,10 @@
 	<div class="flex flex-col items-center justify-center gap-4 size-full p-4">
 
 		<form action="?/google" method="post" class="flex flex-col gap-4 w-full md:w-[400px]">
-			<button class="w-full rounded border border-gray-200 p-2 flex items-center justify-center gap-2">
+			<!-- <button class="w-full rounded border border-gray-200 p-2 flex items-center justify-center gap-2">
 				<GoogleIcon size="20" />
 				Sign in with Google
-			</button>
+			</button> -->
 
 			<button formaction="?/github" class="w-full rounded border border-gray-200 p-2 flex items-center justify-center gap-2">
 				<GitHubIcon size="20" />

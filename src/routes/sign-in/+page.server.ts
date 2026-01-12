@@ -5,15 +5,6 @@ import { redirect } from "@sveltejs/kit"
 
 
 export const actions = {
-    // default: async ({ request , locals }) => {
-    //     const data = Object.fromEntries(await request.formData()) as Record<string , string>
-
-    //     const [ user , error ] = await authenticate_user(locals.db , data.email , data.password)
-
-    //     if(!user || error) return { error: 'Something went wrong' }
-
-    //     redirect(303 , '/feed')
-    // },
 
     google: async ({ cookies , url , locals }) => {
 
